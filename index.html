@@ -13,20 +13,25 @@
         <h1>Celebrity Dating Game</h1>
         <h4>Let's find your true celebrity match!
       </div>
-      <form class="survey">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="male">
-          <label class="form-check-label" type="radio" for="male">Male.</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="female">
-          <label class="form-check-label" type="radio" name="female">Female.</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="other">
-          <label class="form-check-label" type="radio" name="other">Prefer not to specify.</label>
-        </div>
-        <br>
+      <div class="card" id="gender-card">
+        <form class="survey" id="gender">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="male" id="male">
+            <label class="form-check-label" type="radio" for="male">Male.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="female" id="female">
+            <label class="form-check-label" type="radio" for="female">Female.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="other" id="other">
+            <label class="form-check-label" type="radio" for="other">Prefer not to specify.</label>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+      </div>
+      <br>
+      <form class="survey2">
         <div class="form-group">
           <label for="age">What is your dream date's age range?</label>
           <select class="form-control" id="age">
@@ -39,21 +44,110 @@
           <label for="career">What is your celbrity match famous for?</label>
           <select class="form-control" id="career">
             <option value="option1">Music</option>
-            <option value="option2">Film</option>
-            <option value="option3">Sports</option>
-            <option>Comedian</option>
+            <option value="option2">Acting</option>
           </select>
         </div>
         <div class="form-group">
           <label for="gender">What's your idea of a perfect date?</label>
-          <select class="form-control" id="?">
+          <select class="form-control" id="perfect-date">
             <option value="option1">A walk on the beach.</option>
             <option value="option2">Cooking at home.</option>
-            <option value="option3">Going out to a show.</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
       </form>
+      <!-- Dude results below -->
+      <div id="matches">
+        <div class="card" id="jordan">
+          <img class="card-img-top" src="" alt="Michael B. Jordan">
+          <div class="card-body">
+            <h5 class="card-title">Michael B. Jordan</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="yeun">
+          <img class="card-img-top" src="" alt="Steven Yeun">
+          <div class="card-body">
+            <h5 class="card-title">Steven Yeun</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="nanjiani">
+          <img class="card-img-top" src="" alt="Kumail Nanjiani">
+          <div class="card-body">
+            <h5 class="card-title">Kumail Nanjiani</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="groban">
+          <img class="card-img-top" src="" alt="Josh Groban">
+          <div class="card-body">
+            <h5 class="card-title">Josh Groban</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="bono">
+          <img class="card-img-top" src="" alt="Bono">
+          <div class="card-body">
+            <h5 class="card-title">Bono</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="freeman">
+          <img class="card-img-top" src="" alt="Morgan Freeman">
+          <div class="card-body">
+            <h5 class="card-title">Morgan Freeman</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+
+        <!-- Lady Results below -->
+
+        <div class="card" id="stone">
+          <img class="card-img-top" src="" alt="Emma Stone">
+          <div class="card-body">
+            <h5 class="card-title">Emma Stone</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="grande">
+          <img class="card-img-top" src="" alt="Arianna Grande">
+          <div class="card-body">
+            <h5 class="card-title">Arianna Grande</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="poehler">
+          <img class="card-img-top" src="" alt="Amy Poehler">
+          <div class="card-body">
+            <h5 class="card-title">Amy Poehler</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="beyonce">
+          <img class="card-img-top" src="" alt="Beyonce">
+          <div class="card-body">
+            <h5 class="card-title">Beyonce</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="smith">
+          <img class="card-img-top" src="" alt="Maggie Smith">
+          <div class="card-body">
+            <h5 class="card-title">Maggie Smith</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+        <div class="card" id="streep">
+          <img class="card-img-top" src="" alt="Merlyn Streep">
+          <div class="card-body">
+            <h5 class="card-title">Merlyn Streep</h5>
+            <p class="card-text">THIS IS WHO YOU GOT</p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </body>
 </html>
