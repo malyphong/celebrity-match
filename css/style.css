@@ -6,6 +6,17 @@
 
 }
 
-.survey2 {
+form.male-survey {
   display: none;
+  background-color: red;
+}
+
+form.female-survey {
+  display: none;
+  background-color: blue;
+}
+
+form.other-survey {
+  display: none;
+  background-color: green;
 }

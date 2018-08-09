@@ -16,22 +16,23 @@
       <div class="card" id="gender-card">
         <form class="survey" id="gender">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="male" id="male">
-            <label class="form-check-label" type="radio" for="male">Male.</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label type="radio" for="male">Male.</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="female" id="female">
-            <label class="form-check-label" type="radio" for="female">Female.</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label type="radio" for="female">Female.</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="other" id="other">
-            <label class="form-check-label" type="radio" for="other">Prefer not to specify.</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <label type="radio" for="other">Prefer not to specify.</label>
           </div>
           <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         </form>
       </div>
       <br>
-      <form class="survey2">
+
+      <form class="male-survey">
         <div class="form-group">
           <label for="age">What is your dream date's age range?</label>
           <select class="form-control" id="age">
@@ -54,7 +55,61 @@
             <option value="option2">Cooking at home.</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit-male">Submit</button>
+      </form>
+
+
+      <form class="female-survey">
+        <div class="form-group">
+          <label for="age">What is your dream date's age range?</label>
+          <select class="form-control" id="age">
+            <option value="option1">18-34</option>
+            <option value="option2">35-49</option>
+            <option value="option3">50+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="career">What is your celbrity match famous for?</label>
+          <select class="form-control" id="career">
+            <option value="option1">Music</option>
+            <option value="option2">Acting</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gender">What's your idea of a perfect date?</label>
+          <select class="form-control" id="perfect-date">
+            <option value="option1">A walk on the beach.</option>
+            <option value="option2">Cooking at home.</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-female">Submit</button>
+      </form>
+
+
+      <form class="other-survey">
+        <div class="form-group">
+          <label for="age">What is your dream date's age range?</label>
+          <select class="form-control" id="age">
+            <option value="option1">18-34</option>
+            <option value="option2">35-49</option>
+            <option value="option3">50+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="career">What is your celbrity match famous for?</label>
+          <select class="form-control" id="career">
+            <option value="option1">Music</option>
+            <option value="option2">Acting</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gender">What's your idea of a perfect date?</label>
+          <select class="form-control" id="perfect-date">
+            <option value="option1">A walk on the beach.</option>
+            <option value="option2">Cooking at home.</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-other">Submit</button>
       </form>
       <!-- Dude results below -->
       <div id="matches">
